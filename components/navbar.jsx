@@ -21,7 +21,7 @@ export default function NavBar() {
             </li>
             <li className="relative">
               <Link
-                href={"/about"}
+                href={"/AboutUs"}
                 className="after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-0 after:bottom-[-2px] after:right-0 hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-in-out"
               >
                 About
