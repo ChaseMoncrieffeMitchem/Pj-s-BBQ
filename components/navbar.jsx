@@ -44,11 +44,8 @@ export default function NavBar() {
         <div className="absolute top-0 left-0 flex items-center justify-between w-full h-full pl-8 pr-8">
           <div className="w-[60%]">
             <h1 className="text-white text-4xl">Pj's Smokin' BBQ</h1>
-            <p className="pt-2 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              ipsa, repellat deleniti nihil blanditiis cumque labore alias
-              incidunt ea ut illum corrupti fugit tenetur at et, explicabo
-              corporis placeat excepturi.
+            <p className="pt-2 pb-2 text-white">
+            We are a family owned & operated food service offering Texas smoked meats. From our family to yours, we put lots of love and careful attention in each item. We hope you enjoy our work as much as we enjoy bringing it to you!
             </p>
             <Button variant="contained" href="orders">
               Order Now

@@ -1,22 +1,37 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
+import Slider from "react-slick";
+import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function AboutUs() {
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+
   return (
     <>
-      <div className="flex h-[50vh] items-center justify-evenly bg-gray-500">
-        <div className="flex">
-            <Image src={'/Brisket.webp'} height={100} width={100}/>
-            <Image src={'/Sausage.webp'} height={100} width={100}/>
-            <Image src={'/Ribs.webp'} height={100} width={100}/>
-            <Image src={'/Sandwhich.webp'} height={100} width={100}/>
-        </div>
-        <div >
-            <h1>Welcome to Pj's Smokin' BBQ</h1>
-            <p>Lorem</p>
-            <p>Lorem</p>
-            <Button variant="container" href="/AboutUs-ReadMore">Read More</Button>
-        </div>
+      <div>
+        <Slider {...settings}>
+          <div>
+            <Image src={"/Brisket.webp"} height={300} width={300} />
+          </div>
+          <div>
+            <Image src={"/Sausage.webp"} height={300} width={300} />
+          </div>
+          <div>
+            <Image src={"/Ribs.webp"} height={300} width={300} />
+          </div>
+          <div>
+            <Image src={"/Sandwhich.webp"} height={300} width={300} />
+          </div>
+        </Slider>
       </div>
     </>
   );
