@@ -17,7 +17,7 @@ export default function AboutUs() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <Slider {...settings}>
           <div>
             <Image src={"/Brisket.webp"} height={300} width={300} />
@@ -32,7 +32,7 @@ export default function AboutUs() {
             <Image src={"/Sandwhich.webp"} height={300} width={300} />
           </div>
         </Slider>
-      </div>
+      </div> */}
     </>
   );
 }
