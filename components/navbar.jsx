@@ -5,55 +5,46 @@ import { Button } from "@mui/material";
 export default function NavBar() {
   return (
     <>
-      <header class="th-header header-layout7">
-        <div class="sticky-wrapper">
-            <div class="menu-area">
-                <div class="container th-container">
-                    <div className="flex">
-                        <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="index.html">
-                                    <Image src={'/Logo.png'} alt="Logo" width={100} height={100}/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <nav class="main-menu d-none d-lg-inline-block">
-                                <ul className="flex gap-4">
-                                    <Link class="menu-item-has-children" href={'index.html'}>
-                                        Home
-                                    </Link>
-                                    <Link class="menu-item-has-children" href={'#'}>
-                                        Menu
-                                    </Link>
-                                    <Link class="menu-item-has-children" href={'#'}>
-                                        Order Online
-                                    </Link>
-                                    <Link class="menu-item-has-children" href={'#'}>
-                                        About Us
-                                    </Link>
-                                    <Link href={'contact.html'}>
-                                        Contact Us
-                                    </Link>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-auto">
-                            <div class="header-button">
-                                <button type="button" class="simple-icon searchBoxToggler"><i class="far fa-search"></i></button>
-                                <button type="button" class="simple-icon sideMenuToggler">
-                                    <i class="far fa-cart-shopping"></i>
-                                    <span class="badge">5</span>
-                                </button>
-                                <a href="contact.html" class="th-btn rounded-2 style3">Book a Table<i class="fa-solid fa-arrow-right ms-2"></i></a>
-                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
-                            </div>
-                        </div>
+      <header className="relative z-40 bg-gray-700">
+        <div className="transition duration-400 ease-in-out">
+          <div className="border-b border-customGray">
+            <div className="max-w-[1244px] pl-[12px] pr-[12px]">
+              <div className="flex items-center justify-between">
+                <div className="flex-shrink-0">
+                  <div className="pt-3 pb-3">
+                    <Link href={"/"}>
+                      <Image src={"/Logo.png"} height={100} width={100} />
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex-shrink-0">
+                  <nav className="hidden lg:inline-block">
+                    <ul className="flex">
+                      <li className="mt-[15px] mb-[15px]">
+                        <Link className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out" href={"/"}>Home</Link>
+                      </li>
+                      <li className="mt-[15px] mb-[15px]">
+                        <Link className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out" href={"/menu"}>Menu</Link>
+                      </li>
+                      <li className="mt-[15px] mb-[15px]">
+                        <Link className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out" href={"/about"}>About</Link>
+                      </li>
+                      <li className="mt-[15px] mb-[15px]">
+                        <Link className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out" href={"/catering-events"}>Catering/Events</Link>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div className="flex-shrink-0">
+                    <div className="h-full flex items-center gap-[25px]">
+                        <Link href={"/orders"} className="relative z-20 overflow-hidden align-middle inline-block border-none uppercase text-center text-sm font-medium leading-none py-[21px] px-[35px] rounded-md transition-colors duration-250 duration-400 ease-linear bg-red-500 text-white hover:bg-white hover:text-gray-700">Order Online</Link>
                     </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
     </>
   );
 }
