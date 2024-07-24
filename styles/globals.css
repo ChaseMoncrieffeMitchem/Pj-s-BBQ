@@ -29,3 +29,8 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.kenburns-efect {
+  transition: transform 5s ease-out;
+  transform: scale(1.2)
+}

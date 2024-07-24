@@ -1,0 +1,4 @@
+.kenburns-efect {
+    transition: transform 5s ease-out;
+    transform: scale(1.2)
+}
