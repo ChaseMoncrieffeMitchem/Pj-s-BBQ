@@ -3,9 +3,6 @@ import Image from "next/image";
 export default function HeroArea() {
   return (
     <>
-    <div className="hidden flex">
-
-    </div>
       <div className="hidden md:block">
         <div
           className="relative overflow-hidden w-[58px] h-[58px] leading-[58px] p-0"

@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 export default function NavBar() {
   return (
     <>
-      <header className="relative z-40 bg-transparent">
+      <header className="relative z-40">
         <div className="transition duration-400 ease-in-out">
           <div className="border-b border-customGray">
             <div className="max-w-[1244px] pl-[12px] pr-[12px]">
