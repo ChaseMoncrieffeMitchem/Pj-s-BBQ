@@ -5,11 +5,19 @@ import { Button } from "@mui/material";
 export default function NavBar() {
   return (
     <>
-      <header className="relative z-40">
+      <header className="relative z-50 bg-transparent">
         <div className="transition duration-400 ease-in-out">
           <div className="border-b border-customGray">
             <div className="max-w-[1244px] pl-[12px] pr-[12px]">
               <div className="flex items-center justify-between">
+              <div className="relative w-full h-screen overflow-hidden">
+              <Image
+                layout="fill"
+                objectFit="cover"
+                src={"/bbq1.jpg"}
+                className="whitespace-nowrap mr-0 mb-0"
+              />
+            </div>
                 <div className="flex-shrink-0">
                   <div className="pt-3 pb-3">
                     <Link href={"/"}>
