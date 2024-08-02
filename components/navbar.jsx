@@ -6,9 +6,9 @@ export default function NavBar() {
   return (
     <>
       
-        <header className="bg-transparent">
+        <header className="bg-black">
           <div className="transition duration-400 ease-in-out">
-            <div className="border-b border-white">
+            
               <div className="max-w-[1244px] pl-[12px] pr-[12px]">
                 <div className="flex items-center justify-between">
                   <div className="flex-shrink-0 z-30">
@@ -23,7 +23,7 @@ export default function NavBar() {
                       <ul className="flex">
                         <li className="z-30 mt-[15px] mb-[15px]">
                           <Link
-                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-black hover:text-red-400 transition-colors duration-300 ease-in-out"
+                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out"
                             href={"/"}
                           >
                             Home
@@ -31,7 +31,7 @@ export default function NavBar() {
                         </li>
                         <li className="z-30 mt-[15px] mb-[15px]">
                           <Link
-                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-black hover:text-red-400 transition-colors duration-300 ease-in-out"
+                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out"
                             href={"/menu"}
                           >
                             Menu
@@ -39,7 +39,7 @@ export default function NavBar() {
                         </li>
                         <li className="z-30 mt-[15px] mb-[15px]">
                           <Link
-                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-black hover:text-red-400 transition-colors duration-300 ease-in-out"
+                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out"
                             href={"/about"}
                           >
                             About
@@ -47,7 +47,7 @@ export default function NavBar() {
                         </li>
                         <li className="z-30 mt-[15px] mb-[15px]">
                           <Link
-                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-black hover:text-red-400 transition-colors duration-300 ease-in-out"
+                            className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out"
                             href={"/catering-events"}
                           >
                             Catering/Events
@@ -69,7 +69,7 @@ export default function NavBar() {
                 </div>
                 
               </div>
-            </div>
+            
           </div>
         </header>
     </>
