@@ -1,31 +1,18 @@
+import Image from 'next/image';
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 
 export default function FoodCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        sx={{ height: 200, objectFit: 'cover', objectPosition: 'center' }}
-        image="/Brisket.webp"
-        title="brisket"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Brisket
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Choose between whole brisket (8 pounds) or half (4 pounds)
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Order Now</Button>
-      </CardActions>
-    </Card>
+    <>
+        <div className='flex border-gray-200'>
+            <Image src="/Brisket.webp" height={100} width={100} alt='Brisket'/>
+            <div className='bg-white border-r-[20px] pl-[75px] pr-[10px] pb-[30px] pt-[10px] shadow-custom relative'>
+                <h1>Brisket</h1>
+                <h2>Blah Blah Blah Brisket is good</h2>
+                <span className='pr-[18px]'>$40.00</span>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </>
   );
 }
