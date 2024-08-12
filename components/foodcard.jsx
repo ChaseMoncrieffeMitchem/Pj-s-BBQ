@@ -19,7 +19,7 @@ export default function FoodCard() {
               height={100}
               layout="responsive"
               objectFit="cover"
-              className="rounded-md"
+              className="rounded-md aspect-w-1S"
               alt="Brisket"
             />
           </div>
