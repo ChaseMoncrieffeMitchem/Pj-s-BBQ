@@ -10,7 +10,6 @@ export default function FoodCard() {
   return (
     <>
       <div className="flex flex-wrap justify-evenly">
-
         <div className="flex pl-[16px] pr-[16px] mb-[16px]">
           <div className="text-center transition-all ease-linear duration-400 flex h-full border border-[#bdbdbd] rounded-lg">
             <div className="flex w-32 h-32 flex-shrink-0 items-center">
@@ -25,8 +24,8 @@ export default function FoodCard() {
               />
             </div>
             <div className="bg-white w-[300px] pl-[75px] pr-[10px] pb-[30px] pt-[10px] shadow-custom relative flex flex-col justify-center items-center">
-              <h1>Brisket</h1>
-              <div className="flex justify-between items-center flex-col">
+              <div className="flex flex-col items-center">
+                <h1>Brisket</h1>
                 <span>$65.00 - $95.00</span>
                 <button className="bg-red-500 rounded-md pl-1 pr-1 text-white hover:text-black transition-colors duration-250 duration-400 ease-linear">
                   Order Now
