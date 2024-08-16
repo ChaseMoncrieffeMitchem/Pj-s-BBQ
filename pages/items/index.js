@@ -1,17 +1,18 @@
 import Image from "next/image";
 import * as React from "react";
+import menuItems from "@/assets/menuItems";
 
 export async function getServerSideProps() {
-  console.log("getserver is called");
+  console.log('getserver is called')
   try {
     const response = await axios.get("http://localhost:3000/api/items");
 
-    console.log("API Response: ", response);
-    console.log("API Data: ", response.data);
+    console.log("API Response: ", response)
+    console.log("API Data: ", response.data)
 
     return {
       props: {
-        menuItems: response.data
+        items: response.data,
       },
     };
   } catch (error) {
@@ -24,21 +25,19 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Menu({ menuItems }) {
-  console.log(menuItems);
+export default function Entrees({ items }) {
+    
+  console.log(items);
 
   return (
     <>
-      <h1 className="flex justify-center mt-[18px] mb-[18px] text-[30px]">
-        Entrees
-      </h1>
-      <div className="flex flex-wrap justify-evenly">
-        {menuItems?.map((item) => (
-          <div className="flex pl-[16px] pr-[16px] mb-[16px]" key={item.id}>
+      {items?.map((item) => (
+        <div className="flex flex-wrap justify-evenly">
+          <div className="flex pl-[16px] pr-[16px] mb-[16px]">
             <div className="text-center transition-all ease-linear duration-400 flex h-full border border-[#bdbdbd] rounded-lg pl-2 ml-2 mr-2 bg-black">
               <div className=" flex w-32 h-32 flex-shrink-0 pl-1 pr-1 items-center justify-center">
                 <Image
-                  src={item.image}
+                  src="/BananaPuddingCrop.webp"
                   layout="responsive"
                   width={100}
                   height={100}
@@ -58,8 +57,8 @@ export default function Menu({ menuItems }) {
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </>
   );
 }

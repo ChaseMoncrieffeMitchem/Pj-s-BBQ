@@ -4,6 +4,7 @@ import NavBar from "@/components/navbar";
 import AboutUs from "./AboutUs";
 import HeroArea from "./HeroArea";
 import Menu from "./Menu";
+import menuItems from "@/assets/menuItems";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <div className="row">
         <NavBar />
         <HeroArea />
-        <Menu />
+        <Menu menuItems={menuItems} />
         <AboutUs />
       </div>
     </>
