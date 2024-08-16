@@ -4,7 +4,9 @@ import NavBar from "@/components/navbar";
 import AboutUs from "./AboutUs";
 import HeroArea from "./HeroArea";
 import Menu from "./Menu";
-import menuItems from "@/assets/menuItems";
+import entrees from "@/assets/entrees";
+import sides from "@/assets/sides";
+import desserts from "@/assets/desserts";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
       <div className="row">
         <NavBar />
         <HeroArea />
-        <Menu menuItems={menuItems} />
+        <Menu entrees={entrees} sides={sides} desserts={desserts}/>
         <AboutUs />
       </div>
     </>
