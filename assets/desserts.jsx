@@ -3,7 +3,7 @@ const desserts = [
       id: 7,
       name: "Sweet Potato Pie",
       description: "A delicious sweet potato pie, perfect for dessert.",
-      price: "$15.0/pie",
+      price: "$15.00/pie",
       image: "/SweetPie.webp",
       alt: "Sweet Potato Pie",
       type: "dessert"

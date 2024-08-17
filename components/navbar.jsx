@@ -49,7 +49,7 @@ export default function NavBar() {
                         <li className="z-30 mt-[15px] mb-[15px]">
                           <Link
                             className="pl-[31.5px] pr-31.5px block font-medium text-base uppercase text-white hover:text-red-400 transition-colors duration-300 ease-in-out"
-                            href={"/catering-events"}
+                            href={"/CateringEvents"}
                           >
                             Catering/Events
                           </Link>
