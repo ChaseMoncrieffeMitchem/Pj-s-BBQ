@@ -176,7 +176,7 @@ export default function CateringEvents() {
               onChange={handleChange}
               placeholder="Name *"
               required
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded-md"
             />
           </div>
 
